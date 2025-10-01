@@ -1,0 +1,43 @@
+<ion-toolbar>
+  <ion-buttons slot="start">
+    <ion-back-button default-href="#"></ion-back-button>
+  </ion-buttons>
+  <ion-title class="titulo">Productos</ion-title>
+</ion-toolbar>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">productos</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+<h2 class="section-title">Gestionar productos</h2>
+
+
+  <!-- Lista de acciones -->
+  <ion-list lines="none" class="custom-list">
+    
+    <ion-item button detail routerLink="/add-bicycle">
+      <ion-icon name="add-circle-outline" slot="start" class="icon green"></ion-icon>
+      <ion-label>Añadir nueva bicicleta</ion-label>
+    </ion-item>
+
+    <ion-item button detail routerLink="/edit-bicycle">
+      <ion-icon name="pencil-outline" slot="start" class="icon green"></ion-icon>
+      <ion-label>Editar información de bicicleta</ion-label>
+    </ion-item>
+
+    <ion-item button detail routerLink="/upload-images">
+      <ion-icon name="image-outline" slot="start" class="icon green"></ion-icon>
+      <ion-label>Subir imágenes</ion-label>
+    </ion-item>
+
+    <ion-item button detail routerLink="/manage-inventory">
+      <ion-icon name="albums-outline" slot="start" class="icon green"></ion-icon>
+      <ion-label>Gestionar inventario</ion-label>
+    </ion-item>
+
+  </ion-list>
+
+</ion-content>

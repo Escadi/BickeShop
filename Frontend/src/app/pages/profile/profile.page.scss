@@ -1,0 +1,34 @@
+ion-content{
+    --background: #f7f7f7;
+}
+.tituloPerfil{
+    display: flex;
+    text-align: center;
+    padding-right: 70px;
+}
+.contenedorLogin{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 1.5rem;
+    
+}
+ion-item{
+    justify-content: center;
+    padding: 10px;
+}
+.labelInicio{
+    text-align: center;
+    font-size: 40px;
+    margin-top: 150px;
+ 
+}
+.Session{
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    color: black;
+    font-weight: 18px;
+    background-color:#00FF00;
+    border-radius: 10px;
+}
