@@ -1,17 +1,80 @@
-ion-content{
+ion-content {
     --background: #f7f7f7;
 }
-ion-select {
-  border: 1px solid #ccc;
+
+ion-toolbar {
+    --background: #f7f7f7;
 }
-.titulo{
+ion-input{
+    --background: #e4e2e2;
+}
+
+.selector {
+    padding-left: 10px;
+    padding-right: 10px;
+
+}
+
+.selectorItems {
+    border: 1px solid transparentize($color: #000000, $amount: 0.7);
+    border-radius: 4px;
+    height: 55px;
+}
+
+.titulo {
     display: flex;
     text-align: center;
     padding-right: 70px;
 }
-.contenedoresInput{
+
+.contenedoresInput {
     padding-left: 10px;
     padding-right: 10px;
 }
 
+.imageBox {
+    margin-top: 10px;
+}
 
+.upload-box {
+    margin-top: 10px;
+    border: 2px dashed #ccc;
+    border-radius: 8px;
+    width: 300px;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    background-color: #f9f9f9;
+    transition: border-color 0.3s;
+}
+
+.upload-box:hover {
+    border-color: #007bff;
+}
+
+.upload-box img {
+    width: 40px;
+    opacity: 0.6;
+    margin-bottom: 8px;
+}
+
+.upload-box span {
+    color: #666;
+    font-size: 14px;
+}
+
+#file-input {
+    display: none;
+}
+
+.BtnAdd {
+    margin-top: 30px;
+    background-color: #00FF00;
+    text-align: center;
+    color: black;
+    margin-left: 10px;
+    margin-right: 10px;
+}

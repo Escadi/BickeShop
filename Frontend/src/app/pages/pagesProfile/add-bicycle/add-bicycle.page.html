@@ -19,16 +19,39 @@
     <ion-input fill="outline" placeholder="RX-200"></ion-input>
     <p>Precio</p>
     <ion-input fill="outline" placeholder="€ 1500"></ion-input>
+    <!----------------------------------------------------------------------------
+    |                               ITEMS SELECTOR BAR                            |
+    ------------------------------------------------------------------------------>
     <p>Tipo</p>
-    <ion-item>
-      <ion-select interface="popover" placeholder="Montaña">
-        <ion-select-option value="apples">Apples</ion-select-option>
-        <ion-select-option value="oranges">Oranges</ion-select-option>
-        <ion-select-option value="bananas">Bananas</ion-select-option>
+    <div class="selectorItems">
+      <ion-select class="selector" interface="popover" placeholder="Montaña">
+        <ion-select-option value="Mountain Bike">Mountain Bike</ion-select-option>
+        <ion-select-option value="Urbanas">Urbanas</ion-select-option>
+        <ion-select-option value="Plegables">Plegables</ion-select-option>
+        <ion-select-option value="BMX">BMX</ion-select-option>
+        <ion-select-option value="Gravel">Gravel</ion-select-option>
+        <ion-select-option value="Hibridas">Hibridas</ion-select-option>
+        <ion-select-option value="Fixies">Fixies</ion-select-option>
+        <ion-select-option value="Ruteras y Pisteras">Ruteras y Pisteras</ion-select-option>
       </ion-select>
-    </ion-item>
+    </div>
+    <!----------------------------------------------------------------------------
+    |                               IMAGE BOX                                     |
+    ------------------------------------------------------------------------------>
+    <div class="imageBox">
+      <label class="tituloImagen">Imagen</label>
+    <label for="file-input" class="upload-box">
+      <img src="https://cdn-icons-png.flaticon.com/512/1829/1829586.png" alt="icono">
+      <span>Subir imagen</span>
+    </label>
+    <input type="file" id="file-input" accept="image/*" onchange="previewImage(event)">
+    <br>
+    <img id="preview" src="" alt="Vista previa"
+      style="max-width: 300px; display: none; border: 1px solid #ccc; border-radius: 8px; margin-top: 10px;">
+    </div>
+    
   </div>
 
 
-  <ion-button class="BtnAdd" fill="clean">Agregar</ion-button>
+  <ion-button expand="block" fill="clear" class="BtnAdd">Agregar</ion-button>
 </ion-content>
