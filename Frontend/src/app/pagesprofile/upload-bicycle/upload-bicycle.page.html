@@ -1,0 +1,55 @@
+<ion-toolbar>
+  <ion-buttons slot="start">
+    <ion-back-button default-href="#"></ion-back-button>
+  </ion-buttons>
+  <ion-title class="titulo">Editar bicicleta</ion-title>
+</ion-toolbar>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Editar bicicleta</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-searchbar animated="true" placeholder="Buscar Bicicleta.."></ion-searchbar>
+  <ion-list lines="none" class="list">
+    <ion-item class="miLista" *ngFor="let b of bicycle">
+
+
+      <ion-label class="listLabel">
+        <p class="id">{{b.id}}</p>
+        <h1 class="marca">{{ b.brand }}</h1>
+        <p class="model">{{ b.model }}</p>
+      </ion-label>
+
+
+      <ion-button slot="end" fill="clear"  class="btnEditar">
+        <ion-icon name="create-outline"></ion-icon>
+      </ion-button>
+
+    </ion-item>
+  </ion-list>
+</ion-content>
+
+<ion-tab-bar slot="bottom" class="customIcon">
+  <ion-tab-button tab="productos">
+    <ion-icon name="home"></ion-icon>
+    <ion-label>Productos</ion-label>
+  </ion-tab-button>
+
+  <ion-tab-button tab="pedidos">
+    <ion-icon name="menu-outline"></ion-icon>
+    <ion-label>Pedidos</ion-label>
+  </ion-tab-button>
+
+  <ion-tab-button tab="clientes">
+    <ion-icon name="card-outline"></ion-icon>
+    <ion-label>Clientes</ion-label>
+  </ion-tab-button>
+
+  <ion-tab-button tab="ajustes">
+    <ion-icon name="person-outline"></ion-icon>
+    <ion-label>Ajustes</ion-label>
+  </ion-tab-button>
+</ion-tab-bar>

@@ -12,16 +12,34 @@
     </ion-toolbar>
   </ion-header>
 
-  <ion-list lines="none" class="list">
-    <ion-item class="miLista" *ngFor="let b of bicycle">
-      <ion-label class="listLabel">
-        <h1 class="marca">{{b.brand}}</h1>
-        <p class="model">{{b.model}}</p>
-        <ion-button (click)="deleteBicycle(b.id)" fill="clear" class="btnEliminar">
-          <ion-icon name="trash-outline"></ion-icon>
-        </ion-button>
-      </ion-label>
-    </ion-item>
-  </ion-list>
+  <ion-searchbar animated="true" placeholder="Buscar Bicicleta.."></ion-searchbar>
+ <ion-list lines="none" class="list">
+  <ion-item class="miLista" *ngFor="let b of bicycle">
+    
+   
+    <ion-avatar slot="start">
+      <img [src]="b.image || 'assets/Monty_KX8_26-scaled.jpg'">
+    </ion-avatar>
+
+    
+    <ion-label class="listLabel">
+      <p class="id">{{b.id}}</p>
+      <h1 class="marca">{{ b.brand }}</h1>
+      <p class="model">{{ b.model }}</p>
+      <p class="stock">Stock: 10</p>
+    </ion-label>
+
+    
+    <ion-button 
+      slot="end" 
+      (click)="deleteBicycle(b.id)" 
+      fill="clear" 
+      color="danger"
+      class="btnEliminar">
+      <ion-icon name="trash-outline"></ion-icon>
+    </ion-button>
+
+  </ion-item>
+</ion-list>
 
 </ion-content>

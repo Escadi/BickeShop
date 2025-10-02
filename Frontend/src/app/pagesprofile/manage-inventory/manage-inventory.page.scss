@@ -5,29 +5,55 @@ ion-content {
 ion-toolbar {
     --background: #f7f7f7;
 }
-ion-icon{
+
+ion-icon {
     color: red;
 }
-.list{
-   background: #f7f7f7;
+
+ion-searchbar{
+    padding-right: 10px;
+    padding-left: 10px;
+}
+.titulo{
+    text-align: center;
+    margin-right: 50px;
+}
+
+.list {
+    background: #f7f7f7;
+
+}
+
+.miLista {
+    margin-left: 10px;
+    margin-right: 10px;
+    border: 1px solid transparentize($color: #000000, $amount: 0.9)
 }
 
 .list ion-item {
-  border-radius: 12px;
-  margin-bottom: 12px;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+    border-radius: 12px;
+    margin-bottom: 12px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
 }
 
-.listLabel ion-button{
+.listLabel {
+    margin-left: 10px;
     justify-content: space-between;
 }
-.modelo{
-    font-size: 14px;
+
+.modelo {
+    font-weight: 14px;
 }
-.marca{
+
+.marca {
     font-size: 20px;
 }
-.btnEliminar{
+
+.stock {
+    font-size: 12;
+}
+
+.btnEliminar {
     background: transparentize($color: red, $amount: 0.8);
     border-radius: 5px;
 }

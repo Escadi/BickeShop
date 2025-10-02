@@ -14,15 +14,19 @@ const routes: Routes = [
   },
   {
         path: 'add-bicycle',
-        loadChildren: () => import('./pages/pagesProfile/add-bicycle/add-bicycle.module').then(m => m.AddBicyclePageModule)
+        loadChildren: () => import('../app/pagesprofile/add-bicycle/add-bicycle.module').then(m => m.AddBicyclePageModule)
   },
   {
     path: 'tab-profile',
-    loadChildren: () => import('./pages/pagesProfile/tab-profile/tab-profile.module').then( m => m.TabProfilePageModule)
+    loadChildren: () => import('../app/pagesprofile/tab-profile/tab-profile.module').then( m => m.TabProfilePageModule)
   },
   {
     path: 'manage-inventory',
-    loadChildren: () => import('./pages/pagesProfile/manage-inventory/manage-inventory.module').then( m => m.ManageInventoryPageModule)
+    loadChildren: () => import('../app/pagesprofile/manage-inventory/manage-inventory.module').then( m => m.ManageInventoryPageModule)
+  },
+  {
+    path: 'upload-bicycle',
+    loadChildren: () => import('./pagesprofile/upload-bicycle/upload-bicycle.module').then( m => m.UploadBicyclePageModule)
   },
   
 
