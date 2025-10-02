@@ -15,8 +15,8 @@
   <ion-list lines="none" class="list">
     <ion-item class="miLista" *ngFor="let b of bicycle">
       <ion-label class="listLabel">
-        <h1>{{b.brand}}</h1>
-        <p>{{b.model}}</p>
+        <h1 class="marca">{{b.brand}}</h1>
+        <p class="model">{{b.model}}</p>
         <ion-button (click)="deleteBicycle(b.id)" fill="clear" class="btnEliminar">
           <ion-icon name="trash-outline"></ion-icon>
         </ion-button>

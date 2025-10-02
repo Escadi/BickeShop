@@ -6,7 +6,7 @@ ion-toolbar {
     --background: #f7f7f7;
 }
 ion-icon{
-    color: black;
+    color: red;
 }
 .list{
    background: #f7f7f7;
@@ -18,15 +18,16 @@ ion-icon{
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
 }
 
-.list ion-item ion-label {
-  font-size: 1rem;
-  font-weight: 500;
-  color: #222;
-}
 .listLabel ion-button{
     justify-content: space-between;
 }
+.modelo{
+    font-size: 14px;
+}
+.marca{
+    font-size: 20px;
+}
 .btnEliminar{
-    background: #00FF00;
+    background: transparentize($color: red, $amount: 0.8);
     border-radius: 5px;
 }
