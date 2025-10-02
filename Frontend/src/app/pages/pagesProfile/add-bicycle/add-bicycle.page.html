@@ -13,15 +13,36 @@
   </ion-header>
 
   <div class="contenedoresInput">
+  <!-- 🔹 ENLAZAMOS EL FORMULARIO AL FORM GROUP -->
+  <form [formGroup]="bicycleForm" (ngSubmit)="createBicycle()">
+
+    <!-- Marca -->
     <p>Marca</p>
-    <ion-input fill="outline" placeholder="Ej: Montain Pro_22"></ion-input>
+    <ion-input 
+      fill="outline" 
+      placeholder="Ej: Montain Pro_22" 
+      formControlName="brand">
+    </ion-input>
+    <ion-note color="danger" *ngIf="getFormControl('brand')?.hasError('required') && getFormControl('brand')?.touched">
+      La marca es obligatoria
+    </ion-note>
+
+    <!-- Modelo -->
     <p>Modelo</p>
-    <ion-input fill="outline" placeholder="RX-200"></ion-input>
+    <ion-input 
+      fill="outline" 
+      placeholder="RX-200" 
+      formControlName="model">
+    </ion-input>
+    <ion-note color="danger" *ngIf="getFormControl('model')?.hasError('required') && getFormControl('model')?.touched">
+      El modelo es obligatorio
+    </ion-note>
+
+    <!-- Precio (aún sin control en el TS) -->
     <p>Precio</p>
     <ion-input fill="outline" placeholder="€ 1500"></ion-input>
-    <!----------------------------------------------------------------------------
-    |                               ITEMS SELECTOR BAR                            |
-    ------------------------------------------------------------------------------>
+
+    <!-- Tipo -->
     <p>Tipo</p>
     <div class="selectorItems">
       <ion-select class="selector" interface="popover" placeholder="Montaña">
@@ -35,23 +56,27 @@
         <ion-select-option value="Ruteras y Pisteras">Ruteras y Pisteras</ion-select-option>
       </ion-select>
     </div>
-    <!----------------------------------------------------------------------------
-    |                               IMAGE BOX                                     |
-    ------------------------------------------------------------------------------>
+
+    <!-- Imagen -->
     <div class="imageBox">
       <label class="tituloImagen">Imagen</label>
-    <label for="file-input" class="upload-box">
-      <img src="https://cdn-icons-png.flaticon.com/512/1829/1829586.png" alt="icono">
-      <span>Subir imagen</span>
-    </label>
-    <input type="file" id="file-input" accept="image/*" onchange="previewImage(event)">
-    <br>
-    <img id="preview" src="" alt="Vista previa"
-      style="max-width: 300px; display: none; border: 1px solid #ccc; border-radius: 8px; margin-top: 10px;">
+      <label for="file-input" class="upload-box">
+        <img src="https://cdn-icons-png.flaticon.com/512/1829/1829586.png" alt="icono">
+        <span>Subir imagen</span>
+      </label>
+      <input type="file" id="file-input" accept="image/*" onchange="previewImage(event)">
+      <br>
+      <img id="preview" src="" alt="Vista previa"
+        style="max-width: 300px; display: none; border: 1px solid #ccc; border-radius: 8px; margin-top: 10px;">
     </div>
-    
-  </div>
+
+    <!-- Botón de submit -->
+    <ion-button expand="block" fill="clear" class="BtnAdd" type="submit" [disabled]="!bicycleForm.valid">
+      Agregar
+    </ion-button>
+  </form>
+</div>
 
 
-  <ion-button expand="block" fill="clear" class="BtnAdd">Agregar</ion-button>
+  
 </ion-content>

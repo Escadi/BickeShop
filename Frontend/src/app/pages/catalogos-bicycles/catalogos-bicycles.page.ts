@@ -1,5 +1,4 @@
 import { Component, OnInit, ɵclearResolutionOfComponentResourcesQueue } from '@angular/core';
-import { Router } from '@angular/router';
 import { BicycleService } from 'src/app/services/bicycle-service';
 
 @Component({
@@ -15,7 +14,6 @@ export class CatalogosBicyclesPage implements OnInit {
 
   constructor(
     private bicycleService: BicycleService,
-    private router: Router
   ) { }
 
 
@@ -27,9 +25,5 @@ export class CatalogosBicyclesPage implements OnInit {
     this.bicycleService.getBicycles().subscribe(response => {
       this.bicycles = response;
     });
-  }
-
-   addBicycle() {
-    this.router.navigateByUrl('add-bicycle');
   }
 }

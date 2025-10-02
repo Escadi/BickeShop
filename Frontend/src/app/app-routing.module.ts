@@ -20,6 +20,10 @@ const routes: Routes = [
     path: 'tab-profile',
     loadChildren: () => import('./pages/pagesProfile/tab-profile/tab-profile.module').then( m => m.TabProfilePageModule)
   },
+  {
+    path: 'manage-inventory',
+    loadChildren: () => import('./pages/pagesProfile/manage-inventory/manage-inventory.module').then( m => m.ManageInventoryPageModule)
+  },
   
 
 ];
