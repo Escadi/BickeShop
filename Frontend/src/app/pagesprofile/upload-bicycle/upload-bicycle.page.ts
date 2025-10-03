@@ -8,19 +8,46 @@ import { BicycleService } from 'src/app/services/bicycle-service';
   standalone: false
 })
 export class UploadBicyclePage implements OnInit {
-  bicycle: any =[];
+  bicycle: any[] = [];
+  filtered: any[] = [];
 
   constructor(
     private bicycleService: BicycleService
   ) { }
 
   ngOnInit() {
-    this.getAllBicycles()
-  }
-  getAllBicycles(){
-    this.bicycleService.getBicycles().subscribe(response =>{
-      this.bicycle = response
-    });
+    this.getAllBicycles();
+
   }
 
+  /**--------------------------------------------------------------------------------------
+  * |                     FILTER FOR THE BICYCLES ON CASCADE FORM                         | 
+  * ---------------------------------------------------------------------------------------
+  */
+ 
+  filteredBicycle(event: any) {
+
+    const query = event.target.value.toLowerCase();
+    if(!query || query.trim() === ''){
+      this.filtered = this.bicycle;
+      return;
+    }
+    this.filtered = this.bicycle.filter((bike) =>
+      bike.id.toString().includes(query)||
+      bike.brand.toLowerCase().includes(query) ||
+      bike.model.toLowerCase().includes(query)
+    );
+  }
+
+  /**--------------------------------------------------------------------------------------
+  * |                               CRUD FOR THE BICYCLES                                 | 
+  * ---------------------------------------------------------------------------------------
+  */
+
+  getAllBicycles() {
+    this.bicycleService.getBicycles().subscribe((response: any) => {
+      this.bicycle = response;
+      this.filtered = response; // se añade todas en el filtered
+    });
+  }
 }

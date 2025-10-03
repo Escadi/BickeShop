@@ -12,11 +12,10 @@
     </ion-toolbar>
   </ion-header>
 
-  <ion-searchbar animated="true" placeholder="Buscar Bicicleta.."></ion-searchbar>
+  <ion-searchbar debounce="300" animated="true" placeholder="Código, Marca, Modelo ...."
+    (ionInput)="filteredBicycle($event)"></ion-searchbar>
   <ion-list lines="none" class="list">
-    <ion-item class="miLista" *ngFor="let b of bicycle">
-
-
+    <ion-item class="miLista" *ngFor="let b of filtered">
       <ion-label class="listLabel">
         <p class="id">{{b.id}}</p>
         <h1 class="marca">{{ b.brand }}</h1>
@@ -24,7 +23,7 @@
       </ion-label>
 
 
-      <ion-button slot="end" fill="clear"  class="btnEditar">
+      <ion-button slot="end" fill="clear" class="btnEditar">
         <ion-icon name="create-outline"></ion-icon>
       </ion-button>
 
