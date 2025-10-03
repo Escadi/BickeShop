@@ -7,29 +7,7 @@ const routes: Routes = [
   {
     path: '',
     component: UploadBicyclePage,
-    children: [
-      {
-        path: 'productos',
-        loadChildren: () => import('../productos/productos.module').then(m => m.ProductosPageModule)
-      },
-      {
-        path: 'pedidos',
-        loadChildren: () => import('../pedidos/pedidos.module').then(m => m.PedidosPageModule)
-      },
-      {
-        path: 'clientes',
-        loadChildren: () => import('../clientes/clientes.module').then(m => m.ClientesPageModule)
-      },
-      {
-        path: 'ajustes',
-        loadChildren: () => import('..//ajustes/ajustes.module').then(m => m.AjustesPageModule)
-      },
-       {
-        path: '',
-        redirectTo: 'productos',
-        pathMatch: 'full'
-      },
-    ]
+    
   }
 ];
 

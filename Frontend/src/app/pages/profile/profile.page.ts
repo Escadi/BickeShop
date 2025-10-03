@@ -17,9 +17,14 @@ export class ProfilePage implements OnInit {
 
   ngOnInit() {
   }
+
+  
   
     openTabProfile(){
        this.router.navigateByUrl("tab-profile");
+    }
+    openTabUser(){
+      this.router.navigateByUrl("tab");
     }
   
 

@@ -3,18 +3,32 @@
   <ion-buttons slot="start">
     <ion-back-button defaultHref="../inicio"></ion-back-button>
   </ion-buttons>
-  <ion-title class="tituloPerfil">Mi Perfil</ion-title>
+  <ion-title class="tituloPerfil">Inicio Sesión</ion-title>
 </ion-toolbar>
 <ion-content [fullscreen]="true">
-  <h2 class="labelInicio">Inicio Sesión</h2>
   <div class="contenedorLogin">
+    <img class="logoBici" src="assets/8b23fcad-5533-4046-81c8-e1d103bc7bbd.png" alt="Logo Bickeshop">
+
     <ion-item>
-      <ion-input label="Email :" type="email" placeholder="email@domain.com"></ion-input>
+      <ion-label position="stacked" class="labelCustom">Correo electronico</ion-label>
+      <ion-input type="email" placeholder="Ingresa tu correo" class="inputCustom"></ion-input>
     </ion-item>
+
     <ion-item>
-      <ion-input label="Contaseña:" type="password" value="password"></ion-input>
+      <ion-label position="stacked" class="labelCustom">Contaseña</ion-label>
+      <ion-input type="password" value="password" class="inputCustom"></ion-input>
     </ion-item>
+
     <ion-button fill="clear" class="Session" (click)="openTabProfile()">Iniciar sesión</ion-button>
+    <ion-button fill="clear" class="google">
+      <ion-icon slot="start" name="logo-google" class="logoGoogle"></ion-icon>
+      Continuar con google</ion-button>
+    <ion-button fill="clear" class="invitado" (click)="openTabUser()">Iniciar como invitado</ion-button>
   </div>
 
 </ion-content>
+  <ion-footer class="ion-no-border">
+    <div class="footer">
+      <p>¿No tienes una cuenta?<span class="cuenta"> Crear Cuenta</span></p>
+    </div>
+  </ion-footer>

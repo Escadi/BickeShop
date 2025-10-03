@@ -1,34 +1,84 @@
-ion-content{
+ion-content {
     --background: #f7f7f7;
 }
-.tituloPerfil{
+
+.tituloPerfil {
     display: flex;
     text-align: center;
     padding-right: 70px;
 }
-.contenedorLogin{
+
+.contenedorLogin {
     display: flex;
     flex-direction: column;
     justify-content: center;
     margin: 1.5rem;
-    
+
 }
-ion-item{
+.labelCustom{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+ion-input{
+    margin-top: 10px;
+    border: 2px solid transparentize($color: #adadad, $amount: 0.6);
+    padding: 10px;
+}
+.inputCustom{
+    --padding-start: 10px;
+}
+
+ion-item {
     justify-content: center;
     padding: 10px;
 }
-.labelInicio{
+
+.labelInicio {
     text-align: center;
     font-size: 40px;
     margin-top: 150px;
- 
+
 }
-.Session{
+.logoBici{
+    margin-left: 80px;
+    padding: 20px;
+    width: 200px;
+    height: 200px;
+}
+.google {
+    border-radius: 10px;
+    margin: 20px;
+    border: 2px solid #00ff009a;
+    color: black;
+}
+
+.Session {
     margin: 20px;
     display: flex;
     justify-content: center;
     color: black;
-    font-weight: 18px;
-    background-color:#00FF00;
+    font-weight: bold;
+    font-size: 15px;
+    background-color: #00ff009a;
     border-radius: 10px;
 }
+
+.invitado {
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    color: black;
+    font-weight: bold;
+    font-size: 12px;
+    border-radius: 10px;
+}
+ion-footer{
+    text-align: center;
+}
+.cuenta{
+    font-size: 17px;
+    font-weight: bold;
+    color: grey;
+}
+
