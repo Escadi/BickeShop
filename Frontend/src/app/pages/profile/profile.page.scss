@@ -21,17 +21,21 @@ ion-content {
 }
 
 ion-input{
+    background: #f7f7f7;
     margin-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
     border: 2px solid transparentize($color: #adadad, $amount: 0.6);
-    padding: 10px;
+    border-radius: 10px;
 }
 .inputCustom{
     --padding-start: 10px;
 }
 
 ion-item {
+    --background: #f7f7f7;
     justify-content: center;
-    padding: 10px;
+    
 }
 
 .labelInicio {
@@ -48,13 +52,13 @@ ion-item {
 }
 .google {
     border-radius: 10px;
-    margin: 20px;
+    margin-top: 20px;
     border: 2px solid #00ff009a;
     color: black;
 }
 
 .Session {
-    margin: 20px;
+    margin-top: 20px;
     display: flex;
     justify-content: center;
     color: black;
@@ -65,7 +69,7 @@ ion-item {
 }
 
 .invitado {
-    margin: 20px;
+    margin-top: 20px;
     display: flex;
     justify-content: center;
     color: black;

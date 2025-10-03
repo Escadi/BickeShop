@@ -9,26 +9,25 @@
   <div class="contenedorLogin">
     <img class="logoBici" src="assets/8b23fcad-5533-4046-81c8-e1d103bc7bbd.png" alt="Logo Bickeshop">
 
-    <ion-item>
+  
       <ion-label position="stacked" class="labelCustom">Correo electronico</ion-label>
       <ion-input type="email" placeholder="Ingresa tu correo" class="inputCustom"></ion-input>
-    </ion-item>
-
-    <ion-item>
       <ion-label position="stacked" class="labelCustom">Contaseña</ion-label>
       <ion-input type="password" value="password" class="inputCustom"></ion-input>
-    </ion-item>
+    
+
+
 
     <ion-button fill="clear" class="Session" (click)="openTabProfile()">Iniciar sesión</ion-button>
-    <ion-button fill="clear" class="google">
-      <ion-icon slot="start" name="logo-google" class="logoGoogle"></ion-icon>
+    <ion-button fill="clear" class="google" expand="block">
+      <ion-icon slot="start" name="logo-google" class="logoGoogle" expand="block"></ion-icon>
       Continuar con google</ion-button>
     <ion-button fill="clear" class="invitado" (click)="openTabUser()">Iniciar como invitado</ion-button>
   </div>
 
 </ion-content>
-  <ion-footer class="ion-no-border">
-    <div class="footer">
-      <p>¿No tienes una cuenta?<span class="cuenta"> Crear Cuenta</span></p>
-    </div>
-  </ion-footer>
+<ion-footer class="ion-no-border">
+  <div class="footer">
+    <p>¿No tienes una cuenta?<span class="cuenta"> Crear Cuenta</span></p>
+  </div>
+</ion-footer>
