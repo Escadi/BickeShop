@@ -2,6 +2,14 @@ ion-title{
     text-align: center;
     margin-right: 50px;
 }
+ion-input{
+    --padding-start: 10px;
+    --padding-end: 10px;
+    border: 2px solid transparentize($color: #afafaf9a, $amount: 0.3);
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+
+}
 
 .list ion-item{
     border: 2px solid transparentize($color: #00ff009a, $amount: 0.3);
@@ -18,4 +26,30 @@ ion-title{
     background: rgb(204, 202, 202);
     color: orange;
 }
+.custom-modal ion-title{
+    text-align: center;
+    margin-left: 50px;
+}
+.custom-modal-content{
+    padding: 20px;
+
+}
+.custom-modal-content ion-label{
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.custom-modal-content ion-button{
+    margin-left: 10px;
+    margin-right: 10px;
+     margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    color: black;
+    font-weight: bold;
+    font-size: 15px;
+    background-color: #00ff009a;
+    border-radius: 10px;
+}
+
 

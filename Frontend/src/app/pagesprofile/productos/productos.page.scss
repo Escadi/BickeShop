@@ -5,9 +5,16 @@ ion-toolbar{
   --background: #f7f7f7;
   
 }
+.avatar img{
+  margin-top: 5px;
+  margin-right: 5px;
+  padding: 2px;
+  width: 50px;
+  height: 50px;
+}
 .titulo{
   text-align: center;
-  padding-right: 75px;
+  padding-right: 20px;
 }
 
 .section-title {

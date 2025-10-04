@@ -36,6 +36,9 @@ export class BicycleService {
     return this.httpClient.post(this.endpoint,body.toString(),{headers});
     
   }
+  update(bike:any){
+    return this.httpClient.put(`${this.endpoint}/${bike.id}`,bike);
+  }
   delete(id:any){
     return this.httpClient.delete(`${this.endpoint}/${id}`);
   }

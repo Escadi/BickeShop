@@ -11,9 +11,40 @@
     </ion-toolbar>
   </ion-header>
   <ion-searchbar animated="true" placeholder="Buscar bicicleta" class="findCycle"></ion-searchbar>
+  <ion-button id="filtros" fill="clear" class="filterButton">
+    <ion-icon name="filter" slot="end"></ion-icon>
+  </ion-button>
+
+  <ion-popover trigger="filter-trigger" triggerAction="click">
+    <ng-template>
+      <ion-content>
+        <ion-list>
+          <ion-item>
+            <ion-label>Tipo</ion-label>
+            <ion-select placeholder="Seleccionar tipo">
+              <ion-select-option value="">Todos</ion-select-option>
+              <ion-select-option value="Montaña">Montaña</ion-select-option>
+              <ion-select-option value="BMX">BMX</ion-select-option>
+              <ion-select-option value="Urbana">Urbana</ion-select-option>
+            </ion-select>
+          </ion-item>
+
+          <ion-item>
+            <ion-label>Precio</ion-label>
+            <ion-select placeholder="Rango de precio">
+              <ion-select-option value="">Todos</ion-select-option>
+              <ion-select-option value="low">Menos de 500€</ion-select-option>
+              <ion-select-option value="medium">500€ - 1000€</ion-select-option>
+              <ion-select-option value="high">Más de 1000€</ion-select-option>
+            </ion-select>
+          </ion-item>
+        </ion-list>
+      </ion-content>
+    </ng-template>
+  </ion-popover>
 
   <ion-list class="list">
-    <ion-item class="miLista" *ngFor="let b of bicycles" >
+    <ion-item class="miLista" *ngFor="let b of bicycles">
       <ion-label class="listLabel">
         <h1>{{b.brand}}</h1>
         <p>{{b.model}}</p>

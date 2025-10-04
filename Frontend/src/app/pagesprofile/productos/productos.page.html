@@ -3,7 +3,23 @@
     <ion-back-button default-href="#"></ion-back-button>
   </ion-buttons>
   <ion-title class="titulo">Productos</ion-title>
+  <ion-buttons slot="end" id="user-menu-trigger" >
+    <ion-avatar slot="end" class="avatar">
+      <img src="assets/usuario.png" alt="Avatar del usuario">
+    </ion-avatar>
+  </ion-buttons>
 </ion-toolbar>
+<ion-popover trigger="user-menu-trigger">
+  <ng-template>
+    <ion-content>
+      <ion-list>
+        <ion-item >Mi Perfil</ion-item>
+        <ion-item>Gestion de usuarios</ion-item>
+        <ion-item>Cerrar sesión</ion-item>
+      </ion-list>
+    </ion-content>
+  </ng-template>
+</ion-popover>
 
 <ion-content [fullscreen]="true">
   <ion-header collapse="condense">
@@ -12,12 +28,12 @@
     </ion-toolbar>
   </ion-header>
 
-<h2 class="section-title">Gestionar productos</h2>
+  <h2 class="section-title">Gestionar productos</h2>
 
 
   <!-- Lista de acciones -->
   <ion-list lines="none" class="custom-list">
-    
+
     <ion-item button detail routerLink="/add-bicycle">
       <ion-icon name="add-circle-outline" slot="start" class="icon green"></ion-icon>
       <ion-label>Añadir nueva bicicleta</ion-label>
