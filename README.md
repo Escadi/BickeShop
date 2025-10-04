@@ -1,9 +1,11 @@
-# BickeShop
-
-_El proyecto es una App movil y web para tienda de bicicletas, teniendo totalmente dentro del rol de "Administrador" la administración de la gestión del inventario,
+<p align="center">
+<img src="Frontend/src/assets/8b23fcad-5533-4046-81c8-e1d103bc7bbd.png" alt="logo" width="200"/>
+</p>
+<h2>Proyecto</h2> 
+<p>El proyecto es una App movil y web para tienda de bicicletas, teniendo totalmente dentro del rol de "Administrador" la administración de la gestión del inventario,
 Plantilla de clientes y todos los pedidos realizados por los clientes.
 En el rol de "Usuario" o "invitado" podra ver el catalogo de bicicletas disponibles , novedades sobre los productos,  ver la información del producto y la compra
-de la misma._
+de la misma.</p>
 
 ## Comenzando 🚀
 
