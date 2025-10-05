@@ -7,36 +7,46 @@ Plantilla de clientes y todos los pedidos realizados por los clientes.
 En el rol de "Usuario" o "invitado" podra ver el catalogo de bicicletas disponibles , novedades sobre los productos,  ver la información del producto y la compra
 de la misma.</p>
 
-## Comenzando 🚀
+## Usar la App 🚀
 
-_Estas instrucciones te permitirán obtener una copia del proyecto en funcionamiento en tu máquina local para propósitos de desarrollo y pruebas._
-
-Mira **Deployment** para conocer como desplegar el proyecto.
+Actualmente la aplicación se encuentra en construcción . Para poder manejar la aplicación y probarla 
 
 
-### Pre-requisitos 📋
 
-_Que cosas necesitas para instalar el software y como instalarlas_
+### Activar la App 📋
 
+Para activar y poder usar la app.
+Primero tenemos que descargar el repositorio completo en [ Code ] Descargar .Zip
+
+Despues de haber descargado el repositorio lo añadimos, dentro del terminar del IDE nos vamos a la carpeta de backend e iniciamos Node.js
+
+Accedemos a la carpeta:
 ```
-Da un ejemplo
+cd backend
 ```
-
-### Instalación 🔧
-
-_Una serie de ejemplos paso a paso que te dice lo que debes ejecutar para tener un entorno de desarrollo ejecutandose_
-
-_Dí cómo será ese paso_
-
+Iniciamos Node.js
 ```
-Da un ejemplo
+node index.js
 ```
 
-_Y repite_
+Despues de haber iniciado node.js, abrimos otro terminar dentro del mismo IDE y nos vamos a la carpeta de frontend para iniciar ionic
+
+Accedemos a la carpeta:
+```
+cd frontend
+```
+Iniciamos ionic:
 
 ```
-hasta finalizar
+ionic serve
 ```
+
+Una vez iniciada se abrira el nuestro navegador favorito y le daremos a los botones [ ctrl + shift + i ] y lo pondremos con la vista movil
+
+### Uso de la App
+
+Actualmente la App solo podemos acceder a una parte de ella dado que esta en local, una vez iniciada veremos la pantalla de inicio de sesión.
+
 
 _Finaliza con un ejemplo de cómo obtener datos del sistema o como usarlos para una pequeña demo_
 
@@ -66,41 +76,7 @@ _Agrega notas adicionales sobre como hacer deploy_
 
 ## Construido con 🛠️
 
-_Menciona las herramientas que utilizaste para crear tu proyecto_
-
-* [Dropwizard](http://www.dropwizard.io/1.0.2/docs/) - El framework web usado
-* [Maven](https://maven.apache.org/) - Manejador de dependencias
+* [Ionic-Framework](https://ionicframework.com/) - El framework web usado
+* [Postman](https://www.postman.com/) - Manejador de API
+* Coleccion Postman=[https://documenter.getpostman.com/view/48544649/2sB3QGvC3a]
 * [ROME](https://rometools.github.io/rome/) - Usado para generar RSS
-
-## Contribuyendo 🖇️
-
-Por favor lee el [CONTRIBUTING.md](https://gist.github.com/villanuevand/xxxxxx) para detalles de nuestro código de conducta, y el proceso para enviarnos pull requests.
-
-## Wiki 📖
-
-Puedes encontrar mucho más de cómo utilizar este proyecto en nuestra [Wiki](https://github.com/tu/proyecto/wiki)
-
-## Versionado 📌
-
-Usamos [SemVer](http://semver.org/) para el versionado. Para todas las versiones disponibles, mira los [tags en este repositorio](https://github.com/tu/proyecto/tags).
-
-## Autores ✒️
-
-_Menciona a todos aquellos que ayudaron a levantar el proyecto desde sus inicios_
-
-* **Andrés Villanueva** - *Trabajo Inicial* - [villanuevand](https://github.com/villanuevand)
-* **Fulanito Detal** - *Documentación* - [fulanitodetal](#fulanito-de-tal)
-
-También puedes mirar la lista de todos los [contribuyentes](https://github.com/your/project/contributors) quíenes han participado en este proyecto. 
-
-## Licencia 📄
-
-Este proyecto está bajo la Licencia (Tu Licencia) - mira el archivo [LICENSE.md](LICENSE.md) para detalles
-
-## Expresiones de Gratitud 🎁
-
-* Comenta a otros sobre este proyecto 📢
-* Invita una cerveza 🍺 o un café ☕ a alguien del equipo. 
-* Da las gracias públicamente 🤓.
-* Dona con cripto a esta dirección: `0xf253fc233333078436d111175e5a76a649890000`
-* etc.
