@@ -47,36 +47,10 @@ Una vez iniciada se abrira el nuestro navegador favorito y le daremos a los boto
 
 Actualmente la App solo podemos acceder a una parte de ella dado que esta en local, una vez iniciada veremos la pantalla de inicio de sesión.
 
-
-_Finaliza con un ejemplo de cómo obtener datos del sistema o como usarlos para una pequeña demo_
-
-## Ejecutando las pruebas ⚙️
-
-_Explica como ejecutar las pruebas automatizadas para este sistema_
-
-### Analice las pruebas end-to-end 🔩
-
-_Explica que verifican estas pruebas y por qué_
-
-```
-Da un ejemplo
-```
-
-### Y las pruebas de estilo de codificación ⌨️
-
-_Explica que verifican estas pruebas y por qué_
-
-```
-Da un ejemplo
-```
-
-## Despliegue 📦
-
-_Agrega notas adicionales sobre como hacer deploy_
+* Manual de usuario :  
 
 ## Construido con 🛠️
 
 * [Ionic-Framework](https://ionicframework.com/) - El framework web usado
 * [Postman](https://www.postman.com/) - Manejador de API
-* Coleccion Postman=[https://documenter.getpostman.com/view/48544649/2sB3QGvC3a]
-* [ROME](https://rometools.github.io/rome/) - Usado para generar RSS
+* Colección Postman=[https://documenter.getpostman.com/view/48544649/2sB3QGvC3a]
