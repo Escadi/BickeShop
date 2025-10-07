@@ -5,16 +5,18 @@ ion-toolbar{
   --background: #f7f7f7;
   
 }
-.avatar img{
-  margin-top: 5px;
-  margin-right: 5px;
-  padding: 2px;
-  width: 50px;
-  height: 50px;
-}
+
 .titulo{
-  text-align: center;
-  padding-right: 20px;
+  margin-left: 10px;
+  font-weight: bold;
+}
+.header{
+  box-shadow: none;
+}
+
+.header ion-icon{
+  width: 40px;
+  height: 40px;
 }
 
 .section-title {
@@ -27,23 +29,26 @@ ion-toolbar{
 
 }
 .custom-list{
+  margin-top: 20px;
    background: #f7f7f7;
 }
 
 .custom-list ion-item {
+  padding: 10px;
   border-radius: 12px;
   margin-bottom: 12px;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
 }
 
 .custom-list ion-item ion-label {
+  margin-left: 20px;
   font-size: 1rem;
   font-weight: 500;
   color: #222;
 }
 
 .icon {
-  font-size: 22px;
+  font-size: 30px;
 }
 
 .green {

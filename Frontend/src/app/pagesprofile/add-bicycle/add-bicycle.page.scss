@@ -9,6 +9,8 @@ ion-input{
     --background: #e4e2e2;
 }
 
+
+
 .selector {
     padding-left: 10px;
     padding-right: 10px;
@@ -25,15 +27,25 @@ ion-input{
     display: flex;
     text-align: center;
     padding-right: 70px;
+    font-weight: bold;
 }
 
 .contenedoresInput {
     padding-left: 10px;
     padding-right: 10px;
 }
+.contenedoresInput p {
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    margin-top: 15px;
+    padding: 0;
+}
 
 .imageBox {
-    margin-top: 10px;
+    margin-left: 40px;
+    margin-top: 40px;
 }
 
 .upload-box {

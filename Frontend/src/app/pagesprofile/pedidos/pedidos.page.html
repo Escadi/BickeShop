@@ -1,17 +1,29 @@
-<ion-header [translucent]="true">
+<ion-header>
   <ion-toolbar>
-    <ion-title>pedidos</ion-title>
+    <ion-title>Pedidos</ion-title>
+
+    <ion-buttons slot="end">
+      <ion-button id="user-menu-trigger">
+        <ion-icon name="person-circle-outline"></ion-icon>
+      </ion-button>
+    </ion-buttons>
   </ion-toolbar>
 </ion-header>
 
+<ion-popover trigger="user-menu-trigger" side="bottom" alignment="end">
+  <ng-template>
+    <ion-content>
+      <ion-list>
+        <ion-item button>Mi perfil</ion-item>
+        <ion-item button>Gestión de usuarios</ion-item>
+        <ion-item button>Cerrar sesión</ion-item>
+      </ion-list>
+    </ion-content>
+  </ng-template>
+</ion-popover>
+
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">pedidos</ion-title>
-    </ion-toolbar>
-  </ion-header>
-
-
+  
   <img src="assets/contruccion.png" 
   alt="En construcción" 
   style="margin-left: 50px;margin-right: 50px; margin-top: 100px; width: 300px; height: auto;">
