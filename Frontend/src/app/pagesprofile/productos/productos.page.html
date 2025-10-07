@@ -1,37 +1,32 @@
-<ion-toolbar>
-  <ion-buttons slot="start">
-    <ion-back-button default-href="#"></ion-back-button>
-  </ion-buttons>
-  <ion-title class="titulo">Productos</ion-title>
-  <ion-buttons slot="end" id="user-menu-trigger" >
-    <ion-avatar slot="end" class="avatar">
-      <img src="assets/usuario.png" alt="Avatar del usuario">
-    </ion-avatar>
-  </ion-buttons>
-</ion-toolbar>
-<ion-popover trigger="user-menu-trigger">
+<!-- 🔹 Cabecera principal -->
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Gestionar productos</ion-title>
+
+    <!-- 🔹 Icono de usuario que abre el menú -->
+    <ion-buttons slot="end">
+      <ion-button id="user-menu-trigger">
+        <ion-icon name="person-circle-outline"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<!-- 🔹 Popover del menú de usuario -->
+<ion-popover trigger="user-menu-trigger" side="bottom" alignment="end">
   <ng-template>
     <ion-content>
       <ion-list>
-        <ion-item >Mi Perfil</ion-item>
-        <ion-item>Gestion de usuarios</ion-item>
-        <ion-item>Cerrar sesión</ion-item>
+        <ion-item button>Mi perfil</ion-item>
+        <ion-item button>Gestión de usuarios</ion-item>
+        <ion-item button>Cerrar sesión</ion-item>
       </ion-list>
     </ion-content>
   </ng-template>
 </ion-popover>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">productos</ion-title>
-    </ion-toolbar>
-  </ion-header>
-
-  <h2 class="section-title">Gestionar productos</h2>
-
-
-  <!-- Lista de acciones -->
+<!-- 🔹 Contenido principal -->
+<ion-content>
   <ion-list lines="none" class="custom-list">
 
     <ion-item button detail routerLink="/add-bicycle">
@@ -53,6 +48,6 @@
       <ion-icon name="albums-outline" slot="start" class="icon green"></ion-icon>
       <ion-label>Gestionar inventario</ion-label>
     </ion-item>
-  </ion-list>
 
+  </ion-list>
 </ion-content>
